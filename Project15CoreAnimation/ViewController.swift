@@ -29,6 +29,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tapped(sender: AnyObject) {
+        //cycle through animations each time the button is tapped
+        ++currentAnimation
+        
+        if currentAnimation > 7 {
+            currentAnimation = 0
+        }
     }
 
 }

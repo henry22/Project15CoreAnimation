@@ -33,13 +33,33 @@ class ViewController: UIViewController {
         tap.hidden = true
         
         //call animateWithDuration() with a duration of 1 second, no delay, and no interesting options
-        UIView.animateWithDuration(1, delay: 0, options: .allZeros,
+        UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .allZeros,
             //For the animations closure first do the [unowned self] in to avoid strong reference cycles, then enter the switch/case code
             animations: { [unowned self] in
             //switch using the value of self.currentAnimation, use self to make the closure capture clear
             switch self.currentAnimation {
             case 0:
-                break
+                // make the view 2x its default size
+                self.imageView.transform = CGAffineTransformMakeScale(2, 2)
+            case 1:
+                //clears our view of any pre-defined transform, resetting any changes
+                self.imageView.transform = CGAffineTransformIdentity
+            case 2:
+                //subtracts 256 from both the current X and Y position
+                self.imageView.transform = CGAffineTransformMakeTranslation(-256, -256)
+            case 3:
+                self.imageView.transform = CGAffineTransformIdentity
+            case 4:
+                self.imageView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+            case 5:
+                self.imageView.transform = CGAffineTransformIdentity
+            case 6:
+                //modify its transparency
+                self.imageView.alpha = 0.1
+                self.imageView.backgroundColor = UIColor.greenColor()
+            case 7:
+                self.imageView.alpha = 1
+                self.imageView.backgroundColor = UIColor.clearColor()
             default:
                 break
             }

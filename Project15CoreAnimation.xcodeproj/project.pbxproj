@@ -13,6 +13,8 @@
 		BA0A7A301B37FECC0079ACCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0A7A2F1B37FECC0079ACCE /* Images.xcassets */; };
 		BA0A7A331B37FECC0079ACCE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA0A7A311B37FECC0079ACCE /* LaunchScreen.xib */; };
 		BA0A7A3F1B37FECC0079ACCE /* Project15CoreAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A7A3E1B37FECC0079ACCE /* Project15CoreAnimationTests.swift */; };
+		BA0A7A4B1B3801E30079ACCE /* penguin.png in Resources */ = {isa = PBXBuildFile; fileRef = BA0A7A491B3801E30079ACCE /* penguin.png */; };
+		BA0A7A4C1B3801E30079ACCE /* penguin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA0A7A4A1B3801E30079ACCE /* penguin@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		BA0A7A381B37FECC0079ACCE /* Project15CoreAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project15CoreAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0A7A3D1B37FECC0079ACCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0A7A3E1B37FECC0079ACCE /* Project15CoreAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project15CoreAnimationTests.swift; sourceTree = "<group>"; };
+		BA0A7A491B3801E30079ACCE /* penguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = penguin.png; sourceTree = "<group>"; };
+		BA0A7A4A1B3801E30079ACCE /* penguin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "penguin@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,9 @@
 		BA0A7A251B37FECC0079ACCE /* Project15CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				BA0A7A281B37FECC0079ACCE /* AppDelegate.swift */,
 				BA0A7A2A1B37FECC0079ACCE /* ViewController.swift */,
 				BA0A7A2C1B37FECC0079ACCE /* Main.storyboard */,
-				BA0A7A2F1B37FECC0079ACCE /* Images.xcassets */,
-				BA0A7A311B37FECC0079ACCE /* LaunchScreen.xib */,
+				BA0A7A481B3801E30079ACCE /* Content */,
 				BA0A7A261B37FECC0079ACCE /* Supporting Files */,
 			);
 			path = Project15CoreAnimation;
@@ -90,6 +92,9 @@
 		BA0A7A261B37FECC0079ACCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA0A7A281B37FECC0079ACCE /* AppDelegate.swift */,
+				BA0A7A2F1B37FECC0079ACCE /* Images.xcassets */,
+				BA0A7A311B37FECC0079ACCE /* LaunchScreen.xib */,
 				BA0A7A271B37FECC0079ACCE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +115,15 @@
 				BA0A7A3D1B37FECC0079ACCE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA0A7A481B3801E30079ACCE /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				BA0A7A491B3801E30079ACCE /* penguin.png */,
+				BA0A7A4A1B3801E30079ACCE /* penguin@2x.png */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0A7A4B1B3801E30079ACCE /* penguin.png in Resources */,
 				BA0A7A2E1B37FECC0079ACCE /* Main.storyboard in Resources */,
 				BA0A7A331B37FECC0079ACCE /* LaunchScreen.xib in Resources */,
 				BA0A7A301B37FECC0079ACCE /* Images.xcassets in Resources */,
+				BA0A7A4C1B3801E30079ACCE /* penguin@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
